@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using DiscoJazz;
 using static System.Console;
 namespace TP5
+
+    //yolo
 {
     class Program
     {
