@@ -26,12 +26,25 @@ namespace TP6
     /// </summary>
     public partial class MainWindow
     {
+        internal Manager Manager
+        {
+            get
+            {
+                return (App.Current as App).Manager;
+            }
+        }
+
+
         public MainWindow()
         {           
             SplashScreen splashScreen = new SplashScreen("./Icon/icon3.png");
             splashScreen.Show(false);
+
             InitializeComponent();
-            DataContext = new MainWindowViewModel();
+
+
+            DataContext = Manager;
+            //DataContext = new MainWindowViewModel();
 
             splashScreen.Close(TimeSpan.FromMilliseconds(1000));
 
@@ -47,6 +60,8 @@ namespace TP6
         private void Button_Click1(object sender, RoutedEventArgs e)
         {
             Sure();
+
+            Manager.SelectedIndex = 0;
         }
 
         public async void Sure()
@@ -54,7 +69,8 @@ namespace TP6
             var truc = await this.ShowMessageAsync("Suppression", "Veuillez comfirmer", MessageDialogStyle.AffirmativeAndNegative);
             if (truc == MessageDialogResult.Negative) return;
 
-            (DataContext as MainWindowViewModel).Phones.Remove(Listy.SelectedItem as Phone);
+            Manager.Remove(Manager.SelectedPhone);
+
         }
 
         private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)

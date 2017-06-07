@@ -138,9 +138,15 @@
       <Project>{0f5162fe-72b0-4a9d-8aed-b2259a5e92ee}</Project>
       <Name>ViewModel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\XmlData\XmlData.csproj">
+      <Project>{8a9d8645-7122-4aa6-8e91-1b4f2c1df235}</Project>
+      <Name>XmlData</Name>
+    </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Diagrammes\" />
+    <Resource Include="Diagrammes\DiagrammeActivité.png" />
+    <Resource Include="Diagrammes\UsesCase.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

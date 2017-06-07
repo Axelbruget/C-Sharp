@@ -26,5 +26,6 @@ namespace ViewModel
         public ObservableCollection<Phone> Phones { get; set; }
 
         public Phone Phone { get; set; }
+
     } 
 }

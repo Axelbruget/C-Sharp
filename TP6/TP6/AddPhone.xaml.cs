@@ -33,6 +33,10 @@ namespace TP6
         {
             Phone newPhone = new Phone(Name.Text, Date.Text, Url.Text, 0);
             var c = M.DataContext as MainWindowViewModel;
+
+            M.Manager.Add(new Phone(Name.Text, Date.Text, Url.Text, 0));
+            M.Manager.SelectedIndex = M.Manager.LesPhone.Count() - 1;
+
             c.Phones.Add(newPhone);
             Close();
         }

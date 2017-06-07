@@ -81,7 +81,7 @@
 
         </Border>
 
-        <ListBox HorizontalAlignment="Center" Margin="0 45 0 0"  x:Name="Listy" ItemsSource="{Binding Phones}" SelectedItem="{Binding Phone,Mode=TwoWay}">
+        <ListBox HorizontalAlignment="Center" Margin="0 45 0 0"  x:Name="Listy" ItemsSource="{Binding lesPhone}" SelectedItem="{Binding lesPhone,Mode=TwoWay}">
 
             <ListBox.ItemTemplate>
                 <DataTemplate>
