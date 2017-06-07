@@ -7,7 +7,7 @@ using DiscoJazz;
 using static System.Console;
 namespace TP5
 
-  
+
 {
     class Program
     {
@@ -141,6 +141,8 @@ namespace TP5
             //           from sidemen in album.SideMen
             //           where !sidemen.Key.Equals(album.Leader)
             //           select sidemen.Key).ToList().ForEach((d.Artistes, y)=> ;
+
+
 
             var truc = (from album in d.Albums
                         from sidemen in album.SideMen
