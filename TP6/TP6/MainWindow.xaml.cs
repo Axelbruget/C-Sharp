@@ -52,7 +52,7 @@ namespace TP6
         public async void Sure()
         {
             var truc = await this.ShowMessageAsync("Suppression", "Veuillez comfirmer", MessageDialogStyle.AffirmativeAndNegative);
-            if (truc.ToString().Equals("Negative")) return;
+            if (truc == MessageDialogResult.Negative) return;
 
             (DataContext as MainWindowViewModel).Phones.Remove(Listy.SelectedItem as Phone);
         }
