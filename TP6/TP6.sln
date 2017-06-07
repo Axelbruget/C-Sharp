@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP6", "TP6\TP6.csproj", "{01316156-870F-4EE3-97D6-8FB2CF6C7771}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBiblio", "Phone\PhoneBiblio.csproj", "{1489A8EA-9CB8-49DD-9379-5104AA3EAEC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModel", "ViewModel\ViewModel.csproj", "{0F5162FE-72B0-4A9D-8AED-B2259A5E92EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01316156-870F-4EE3-97D6-8FB2CF6C7771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01316156-870F-4EE3-97D6-8FB2CF6C7771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01316156-870F-4EE3-97D6-8FB2CF6C7771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01316156-870F-4EE3-97D6-8FB2CF6C7771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1489A8EA-9CB8-49DD-9379-5104AA3EAEC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1489A8EA-9CB8-49DD-9379-5104AA3EAEC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1489A8EA-9CB8-49DD-9379-5104AA3EAEC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1489A8EA-9CB8-49DD-9379-5104AA3EAEC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F5162FE-72B0-4A9D-8AED-B2259A5E92EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F5162FE-72B0-4A9D-8AED-B2259A5E92EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F5162FE-72B0-4A9D-8AED-B2259A5E92EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F5162FE-72B0-4A9D-8AED-B2259A5E92EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

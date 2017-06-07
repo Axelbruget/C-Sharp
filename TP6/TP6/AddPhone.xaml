@@ -1,0 +1,65 @@
+﻿<Controls:MetroWindow x:Class="TP6.AddPhone"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        
+        xmlns:local="clr-namespace:TP6"
+        mc:Ignorable="d"
+        Title="Add Phone" Height="300" Width="300" WindowTitleBrush="DarkGreen">
+    <Grid Background="#FFFBFFFE" >
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox Height="27"  Grid.Row="0" Grid.Column="1"
+				 
+				    materialDesign:TextFieldAssist.Hint="Name" x:Name="Name"/>
+
+        <TextBox Height="27"  Grid.Row="1" Grid.Column="1"
+				 
+				    materialDesign:TextFieldAssist.Hint="Date de sortie" x:Name="Date"/>
+
+        <TextBox Height="27"  Grid.Row="2" Grid.Column="1" 
+				 
+				    materialDesign:TextFieldAssist.Hint="Url" x:Name="Url" Margin="0,21,63,20"/>
+
+        <Button Grid.Row="2" Grid.Column="1"  
+                        HorizontalAlignment="Right" VerticalAlignment="Center" Click="Button_Click_2" 
+                        >
+            <materialDesign:PackIcon Kind="Folder" Foreground="#FFFFD297"/>
+        </Button>
+
+        <Grid Grid.Row="4" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <Button VerticalAlignment="Center"  Margin="17,10" Click="Button_Click" Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                        
+                        ToolTip="MaterialDesignFloatingActionAccentButton">
+                <materialDesign:PackIcon Kind="Check" Height="24" Width="24" />
+            </Button>
+
+            <Button VerticalAlignment="Center" Grid.Column="1" Margin="17,10" Click="Button_Click_1" Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                        
+                        ToolTip="MaterialDesignFloatingActionAccentButton">
+                <materialDesign:PackIcon Kind="Close" Height="24" Width="24" />
+            </Button>
+
+        </Grid>
+    </Grid>
+</Controls:MetroWindow>
